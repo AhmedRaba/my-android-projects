@@ -114,7 +114,7 @@ This Android app allows users to manage quotes, including adding, viewing, and d
 
 * Retrofit
 * Room Database
-* Android ViewModel and LiveData
+* MVVM
 * Navigation component
 * Material Design
 * Coroutines
