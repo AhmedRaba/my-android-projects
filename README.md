@@ -2,34 +2,70 @@
 
 This repository contains a collection of Android applications that I have developed as part of my portfolio, showcasing a range of modern Android development practices and technologies.
 
-# [DevStore](https://github.com/AhmedRaba/DevStore) 
+# [CryptoTracker](https://github.com/AhmedRaba/CryptoTracker) 📊  
 
-Welcome to Codespire, a Dev Store app designed to manage and sell coding projects across various categories. This Android application includes features for user authentication, project ratings, and secure payments.
-this is my graduation project which i got (A) for it
+A sleek and modern cryptocurrency tracking app built using **Jetpack Compose**. The app provides a list of cryptocurrencies with key details like market cap, price, and 24-hour changes. It also adapts to landscape mode to display both the coin list and detailed information on the same screen, utilizing **Adaptive Navigation** for an optimized user experience.
 
-## Features 🌟
-
-- **User Authentication:** Register, log in, and manage user sessions securely. 🔒
-- **Project Management:** Browse, search, and view coding projects across different categories. 📁
-- **Project Ratings:** Rate projects and view ratings from other users. ⭐
-- **Payment Integration:** Handle payments securely with integrated payment methods. 💳
-- **Navigation:** Seamless navigation using a BottomNavigationView. 🧭
-
-## Technologies Used 🛠️
-
-- **Retrofit:** For network operations and API integration. 🌐
-- **SharedPreferences:** For storing user sessions and preferences. 🗃️
-- **MVVM (Model-View-ViewModel):** Ensures a clean architecture and separation of concerns. 📊
-- **Navigation Component:** Manages app navigation efficiently. 🗺️
-- **Material Design:** Provides a modern and intuitive user interface. 🎨
-- **Coroutines:** Handles asynchronous operations smoothly. ⏳
+This app was developed as part of **Philipp Lackner’s course**, *The Best Practice Guide to Android Architecture*, showcasing the latest best practices in Android development.
 
 
-## Project Demo 🎥
+## Features ✨  
+- 📋 **Cryptocurrency List**: Displays a list of cryptocurrencies with real-time data, including:
+  - Market Cap
+  - Current Price
+  - 24-Hour Change
+- 📱 **Adaptive Navigation**:
+  - **Portrait Mode**: View the list or coin details individually.
+  - **Landscape Mode**: View both the list and selected coin details side by side for a master-detail experience.
+- 🧼 **Clean Architecture**: Ensures a modular, maintainable, and testable codebase.
+- 🚀 **Reactive and Modern Design** with MVI pattern.
 
-See the Dev Store app in action with this demonstration video:
-[Link to Demo Video](https://drive.google.com/file/d/1acc2kCVpB-UGK5SZIRy751ioOpXG1S9K/view?usp=drive_link)
-.
+
+## Screenshots 📷  
+
+<div align="center">
+
+| Coin List Screen                      | Coin Details Screen               |
+|------------------------------------|--------------------------------------|
+| <img src="https://github.com/user-attachments/assets/f5320169-5651-4ab1-bcda-9e60e8ff585f" alt="Category Screen" width="300"/> | <img src="https://github.com/user-attachments/assets/a9c56f7d-64d6-4d6a-8eb7-ce701882b1fc" alt="News Details Screen" width="300"/> |
+
+| Landscape Screen                     |
+|------------------------------------|
+| <img src="https://github.com/user-attachments/assets/4b55dcfe-929f-4b63-915a-ebc14561c108" alt="Drawer Screen" width="700"/> |
+
+
+</div>
+
+
+## Demo 🎥  
+<div align="center">
+
+https://github.com/user-attachments/assets/199f1549-8ae8-40d6-acb5-b04fd3d5d99d
+
+</div>
+
+
+## Technologies Used 🛠️  
+
+- **Jetpack Compose**: For building modern, declarative UIs.  
+- **Kotlin**: A concise and expressive programming language.  
+- **Koin**: For dependency injection, keeping the app modular and testable.  
+- **Ktor**: For seamless API integration to fetch cryptocurrency data.  
+- **Adaptive Navigation**: To provide context-aware navigation for different screen orientations.  
+- **MVI Architecture**: Ensures unidirectional data flow and scalability.  
+- **Clean Architecture**: A modular approach with clear separation of concerns.  
+
+
+## How It Works ⚙️  
+
+1. **API Integration**: Fetches live cryptocurrency data using **Ktor**.  
+2. **Dependency Injection**: Managed with **Koin** for clean code structure.  
+3. **Reactive UI**: Updates dynamically using Jetpack Compose and MVI.  
+4. **Adaptive Navigation**:  
+   - **Portrait Mode**: Focused experience with a single screen at a time.  
+   - **Landscape Mode**: Enhanced experience with a split-screen layout for coin list and details.  
+
+---
 
 # [NewsApp](https://github.com/AhmedRaba/NewsApp) 📰
 
@@ -86,6 +122,39 @@ https://github.com/user-attachments/assets/88494c99-d998-439f-9daa-c50b7e9d6ebc
 Feel free to explore the code and contribute to the project! 🚀
 
 
+---
+
+# [DevStore](https://github.com/AhmedRaba/DevStore) 
+
+Welcome to Codespire, a Dev Store app designed to manage and sell coding projects across various categories. This Android application includes features for user authentication, project ratings, and secure payments.
+this is my graduation project which i got (A) for it
+
+## Features 🌟
+
+- **User Authentication:** Register, log in, and manage user sessions securely. 🔒
+- **Project Management:** Browse, search, and view coding projects across different categories. 📁
+- **Project Ratings:** Rate projects and view ratings from other users. ⭐
+- **Payment Integration:** Handle payments securely with integrated payment methods. 💳
+- **Navigation:** Seamless navigation using a BottomNavigationView. 🧭
+
+## Technologies Used 🛠️
+
+- **Retrofit:** For network operations and API integration. 🌐
+- **SharedPreferences:** For storing user sessions and preferences. 🗃️
+- **MVVM (Model-View-ViewModel):** Ensures a clean architecture and separation of concerns. 📊
+- **Navigation Component:** Manages app navigation efficiently. 🗺️
+- **Material Design:** Provides a modern and intuitive user interface. 🎨
+- **Coroutines:** Handles asynchronous operations smoothly. ⏳
+
+
+## Project Demo 🎥
+
+See the Dev Store app in action with this demonstration video:
+[Link to Demo Video](https://drive.google.com/file/d/1acc2kCVpB-UGK5SZIRy751ioOpXG1S9K/view?usp=drive_link)
+
+
+
+---
 
 # [QuoteApp](https://github.com/AhmedRaba/QuoteApp) - Inspirational Quotes Application
 
@@ -120,13 +189,12 @@ This Android app allows users to manage quotes, including adding, viewing, and d
 * Coroutines
 * Dagger Hilt
 
-
+----
 
 # [To-Do List App](https://github.com/AhmedRaba/TodoApp) 📝
 
 A simple and intuitive To-Do List app that allows users to manage tasks efficiently. Users can add tasks based on selected dates, update tasks, and delete them as needed. Designed with a focus on clean architecture and modern Android development practices.
 
----
 
 ## Screenshots
 
@@ -142,7 +210,7 @@ A simple and intuitive To-Do List app that allows users to manage tasks efficien
 
 </div>
 
----
+
 
 ## 📱 App Features
 
@@ -151,7 +219,6 @@ A simple and intuitive To-Do List app that allows users to manage tasks efficien
 - **Delete Tasks**: Remove tasks you no longer need.
 - **User-Friendly Interface**: Designed for simplicity and ease of use.
 
----
 
 ## ⚙️ Technologies and Architecture
 
